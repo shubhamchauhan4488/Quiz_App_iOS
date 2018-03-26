@@ -10,5 +10,5 @@
   <li>Auto Layout : Adjusting layout for different iPhones</li>
   </ul>
   
-<img src="screenshot.gif.icloud" width="300" height="614" />
+<img src="screenshots.gif" width="300" height="614" />
 
