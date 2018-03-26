@@ -1,4 +1,4 @@
 # Quiz_App_iOS
 
 
-![](screenshot.gif)
+![](screenshot.gif | width=48 | height=300)
