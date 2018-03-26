@@ -536,7 +536,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZuY-Hf-Wfy"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Performance" id="Bdk-gg-AX9"/>
+                    <tabBarItem key="tabBarItem" title="Performance" image="Performance" selectedImage="Performance" id="Bdk-gg-AX9"/>
                     <connections>
                         <outlet property="bestScore" destination="BvJ-D4-cgb" id="tDG-DO-SEn"/>
                         <outlet property="noOfAttempts" destination="aHh-Ry-ZfE" id="hF3-KE-mej"/>
@@ -638,7 +638,7 @@
             </objects>
             <point key="canvasLocation" x="-3745" y="-141"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -732,7 +732,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="NWZ-HL-N10"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home" selectedImage="Home" id="NWZ-HL-N10"/>
                     <connections>
                         <segue destination="yia-o4-G3v" kind="show" identifier="startQuiz" id="ZdG-6w-0yv"/>
                         <segue destination="k9V-ue-ut7" kind="show" identifier="startToResultSegue" id="JHC-3D-upz"/>
@@ -861,7 +861,7 @@ If you select an incorrect response for a question, you can try again until you 
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="W1R-yu-3nI"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Instructions" id="lwd-oB-Yhq"/>
+                    <tabBarItem key="tabBarItem" title="Instructions" image="Instructions" id="lwd-oB-Yhq"/>
                     <size key="freeformSize" width="375" height="1150"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KhR-4N-vcE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -879,9 +879,9 @@ If you select an incorrect response for a question, you can try again until you 
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="1F7-Jc-Bpg"/>
                         <segue destination="gF6-x9-e7p" kind="relationship" relationship="viewControllers" id="y20-MA-PgR"/>
                         <segue destination="5nj-Mi-b4b" kind="relationship" relationship="viewControllers" id="FEC-t7-oXk"/>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="1F7-Jc-Bpg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UDf-fl-fmb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -891,6 +891,9 @@ If you select an incorrect response for a question, you can try again until you 
     </scenes>
     <resources>
         <image name="Close_Final" width="669" height="651"/>
+        <image name="Home" width="30" height="30"/>
+        <image name="Instructions" width="30" height="30"/>
+        <image name="Performance" width="32" height="31"/>
         <image name="Rectangle" width="376" height="51"/>
         <image name="resultView" width="618" height="418"/>
         <image name="trophy" width="58" height="92"/>
