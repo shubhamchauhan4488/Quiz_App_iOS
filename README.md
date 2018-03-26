@@ -7,6 +7,7 @@
   <li>UserDefaults : To keep track of 'Correct Answers/Score, 'Skipped Questions', 'Number of Attempts' and 'Remember Me' feature</li>
   <li>Sketch : To design components like launch screen, buttons, logos stc</li>
   <li>UIScrollView : For 'Quiz Instructions'</li>
+  <li>Auto Layout : Adjusting layout for different iPhones</li>
   </ul>
   
 <img src="screenshot.gif" width="300" height="614" />
