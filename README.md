@@ -10,5 +10,5 @@
   <li>Auto Layout : Adjusting layout for different iPhones</li>
   </ul>
   
-<img src="https://cvws.icloud-content.com/B/AStYGTqKEvw_OEQe3BGHRawXS6Z2AZeXdW_pQKH7CGEBlkg2WRgdFEzq/screenshot.gif?o=AvUOwuHLV3BogBEYk9brahz3VfYKcFMdxBSPpZ-XW6rp&v=1&x=3&a=B3Z7tEtDjU_PJkjYheqrYY5-jh9EA20SQgEAAANeEkI&e=1522109538&k=nhbbx_XLe3waEpgzxTxW9A&fl=&r=b95236e8-cf95-45cd-ae5c-717d1395949b-1&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=65&s=4ZX298BWNSh9bLcaW5YnBlBkqW4&cd=i" width="300" height="614" />
+<img src="screenshot.gif" width="300" height="614" />
 
