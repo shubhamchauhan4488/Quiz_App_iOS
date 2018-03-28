@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F494AF3206B803300DB9D32 /* quiz.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F494AF2206B803300DB9D32 /* quiz.json */; };
 		8F4E584D1F954440008C0B78 /* DLRadioButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F4E584E1F954440008C0B78 /* DLRadioButton.framework */; };
 		8F4E58501F954449008C0B78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F4E584F1F954449008C0B78 /* Foundation.framework */; };
 		8F4E58551F95B7EA008C0B78 /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4E58541F95B7EA008C0B78 /* QuizModel.swift */; };
@@ -19,7 +20,6 @@
 		8F77EB6E1F90987D0066D1E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F77EB6C1F90987D0066D1E0 /* LaunchScreen.storyboard */; };
 		8F77EB7A1F94436F0066D1E0 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F77EB791F94436F0066D1E0 /* QuizViewController.swift */; };
 		8F867F731F945C9100579BB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F867F721F945C9100579BB6 /* Assets.xcassets */; };
-		8FE4B7AC1F9EC694006A7776 /* quiz.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FE4B7AB1F9EC693006A7776 /* quiz.json */; };
 		8FE4B7EA1FA067E8006A7776 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4B7E91FA067E7006A7776 /* LoginViewController.swift */; };
 		8FE4B7EC1FA0A4C0006A7776 /* PerformanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4B7EB1FA0A4C0006A7776 /* PerformanceViewController.swift */; };
 		D663DD13EC1F4D7EA558E73B /* Pods_QuizApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2708B06EDB6DBB38DA9BD779 /* Pods_QuizApp.framework */; };
@@ -29,6 +29,7 @@
 		2708B06EDB6DBB38DA9BD779 /* Pods_QuizApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuizApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E4B29A0D31406E2D72A0297 /* Pods-QuizApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuizApp/Pods-QuizApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8703A48529544EA9CCDAB251 /* Pods-QuizApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuizApp/Pods-QuizApp.release.xcconfig"; sourceTree = "<group>"; };
+		8F494AF2206B803300DB9D32 /* quiz.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = quiz.json; sourceTree = "<group>"; };
 		8F4E584E1F954440008C0B78 /* DLRadioButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DLRadioButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F4E584F1F954449008C0B78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8F4E58541F95B7EA008C0B78 /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
@@ -43,7 +44,6 @@
 		8F77EB6F1F90987D0066D1E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F77EB791F94436F0066D1E0 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		8F867F721F945C9100579BB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8FE4B7AB1F9EC693006A7776 /* quiz.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = quiz.json; path = ../../quiz.json; sourceTree = "<group>"; };
 		8FE4B7E91FA067E7006A7776 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8FE4B7EB1FA0A4C0006A7776 /* PerformanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,8 +83,8 @@
 		8F77EB5F1F90987D0066D1E0 /* QuizApp */ = {
 			isa = PBXGroup;
 			children = (
-				8FE4B7AB1F9EC693006A7776 /* quiz.json */,
 				8F867F721F945C9100579BB6 /* Assets.xcassets */,
+				8F494AF2206B803300DB9D32 /* quiz.json */,
 				8F77EB601F90987D0066D1E0 /* AppDelegate.swift */,
 				8F77EB641F90987D0066D1E0 /* Main.storyboard */,
 				8F77EB6C1F90987D0066D1E0 /* LaunchScreen.storyboard */,
@@ -183,9 +183,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FE4B7AC1F9EC694006A7776 /* quiz.json in Resources */,
 				8F77EB6E1F90987D0066D1E0 /* LaunchScreen.storyboard in Resources */,
 				8F867F731F945C9100579BB6 /* Assets.xcassets in Resources */,
+				8F494AF3206B803300DB9D32 /* quiz.json in Resources */,
 				8F77EB661F90987D0066D1E0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
