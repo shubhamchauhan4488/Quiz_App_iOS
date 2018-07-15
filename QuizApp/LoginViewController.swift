@@ -12,6 +12,7 @@ class LoginViewController: UIViewController {
     
     var userDefault = UserDefaults.standard
     var attempts = 0
+    var bestScore = 0
     @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var password: UITextField!
     
@@ -19,16 +20,24 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var mySwitch: UISwitch!
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard (_:)))
+        self.view.addGestureRecognizer(tapGesture);
+        
         userName.text = userDefault.value(forKey: "username") as? String
         password.text = userDefault.value(forKey: "password") as? String
-        
+
+        if(userDefault.value(forKey: "noOfAttempts") == nil){
         userDefault.set(attempts, forKey: "noOfAttempts")
+        }
+        if(userDefault.value(forKey: "bestScore") == nil){
+            userDefault.set(bestScore, forKey: "bestScore")
+        }
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @objc func dismissKeyboard (_ sender: UITapGestureRecognizer) {
+        userName.resignFirstResponder()
+        password.resignFirstResponder()
     }
     
     @IBAction func onLogin(_ sender: UIButton) {

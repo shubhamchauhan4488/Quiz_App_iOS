@@ -13,7 +13,6 @@ class QuizViewController: UIViewController, UICollectionViewDelegate, UICollecti
 {
     
     @IBOutlet weak var nextButton: UIButton!
-    @IBOutlet weak var nextLabel: UIButton!
     @IBOutlet weak var collection: UICollectionView!
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var questionNumberLabel: UILabel!
@@ -31,7 +30,7 @@ class QuizViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     var randomQuestionCountArray = [Int]()
     var questionCounter = 0
-    var finalScore = 0
+    var calculatedScore = 0
     let totalQuizQuestions = 10
     
     var skip = 0
@@ -58,7 +57,6 @@ class QuizViewController: UIViewController, UICollectionViewDelegate, UICollecti
         self.view.backgroundColor = UIColor(white: 1, alpha: 1)
         collection.dataSource = self
         collection.delegate = self
-       
         collection.backgroundColor = UIColor(white: 1, alpha : 1)
 
         option_1.contentHorizontalAlignment = .left
@@ -190,10 +188,10 @@ class QuizViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         //Check the result for previous question and change the score
         if selectedOptionNumber == quizModelArray[randomQuestionCountArray[questionCounter]].answer{
-            finalScore = finalScore + 1
+            calculatedScore = calculatedScore + 1
            
         }
-        print("finalScore = \(finalScore)")
+        print("calculatedScore = \(calculatedScore)")
         
         
         //Reset the selected option
@@ -278,7 +276,7 @@ class QuizViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         UserDefaults.standard.set(finalScore, forKey: "score")
+         UserDefaults.standard.set(calculatedScore, forKey: "score")
          UserDefaults.standard.set(skip, forKey: "skippedQuestion")
     }
 

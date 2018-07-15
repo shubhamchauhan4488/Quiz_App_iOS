@@ -12,7 +12,6 @@ class QuestionCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var quesLabl: UILabel!
     
-    
     func configureCell(questionID : Int){
         quesLabl.text = String(describing : questionID)
     }

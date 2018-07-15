@@ -14,28 +14,39 @@ class PerformanceViewController: UIViewController {
     
     @IBOutlet weak var bestScore: UILabel!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        let attempts = UserDefaults.standard.value(forKey: "noOfAttempts")!
-        noOfAttempts.text =  "No. of Attempts : " + String(describing : attempts)
+    var userDefaults = UserDefaults.standard;
+    var max = Int();
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let attempts = userDefaults.value(forKey: "noOfAttempts")!
+        print(attempts);
         let strBest = "Your Best : "
         
-        var max = 0
+        max = userDefaults.integer(forKey: "bestScore")
         
-        if (UserDefaults.standard.value(forKey: "score") as! Int) > max {
-            max = UserDefaults.standard.value(forKey: "score") as! Int
-            bestScore.text = strBest.padding(toLength: 18, withPad: " ", startingAt: 0) + String(describing : max)
-            
+        if (attempts as! Int != 0){
+            noOfAttempts.text =  "No. of Attempts : " + String(describing : attempts)
+            if (userDefaults.integer(forKey: "score") > max ){
+                max = userDefaults.integer(forKey: "score")
+                userDefaults.set(max, forKey: "bestScore");
+                bestScore.text = strBest.padding(toLength: 18, withPad: " ", startingAt: 0) + String(describing : max)
+            }else{
+                bestScore.text = strBest.padding(toLength: 18, withPad: " ", startingAt: 0) + String(describing : max)
+            }
+        }else{
+            noOfAttempts.text =  "No. of Attempts : " + "0";
+            bestScore.text = strBest.padding(toLength: 18, withPad: " ", startingAt: 0) + "0"
         }
-        if attempts as! Int == 0
-        {bestScore.text = strBest.padding(toLength: 18, withPad: " ", startingAt: 0) + "0"
-         }
+        
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+  
+    
     
 }
